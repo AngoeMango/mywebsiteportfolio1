@@ -1,12 +1,13 @@
-import './NavbarStyles.css'
+import './Styles/NavbarStyles.css'
+import AngoeMangoLogo from './Images/AngoeMangoLogo.png'
 
 function Navbar() {
     return (
-        <nav className = "navbar">
-            <div class = "nav_left">
-                <a href="#"></a>
+        <nav class="navbar">
+            <div class="nav_left">
+                <a href="#" class="logo">AngoeMango</a>
             </div>
-            <div class = "nav_right">
+            <div class="nav_right">
                 <a href="#" data-replace="about"><span>about</span></a>
                 <a href="#" data-replace="work"><span>work</span></a>
                 <a href="#" data-replace="resume"><span>resume</span></a>
