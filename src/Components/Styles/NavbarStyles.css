@@ -25,10 +25,12 @@
     font-size: 30px;
     text-shadow: 2px 2px 4px #000000;
     font-family: troglodytepop;
+    color:#D57BAF;
 }
 
+
 /* Button */
-a {
+.navbuttons {
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -39,14 +41,14 @@ a {
     color:#D57BAF;
   }
   
-a::before,
-a::after {
+.navbuttons::before,
+.navbuttons::after {
     content: '';
     position: absolute;
     width: 100%;
     left: 0;
 }
-a::before {
+.navbuttons::before {
     background-color: #D57BAF ;
     height: 2px;
     bottom: 0;
@@ -54,7 +56,7 @@ a::before {
     transform: scaleX(0);
     transition: transform .5s cubic-bezier(0.75, 0, 0.25, 1);
 }
-a::after {
+.navbuttons::after {
     content: attr(data-replace);
     height: 100%;
     top: 0;
@@ -64,19 +66,19 @@ a::after {
     color: #D57BAF;
 }
   
-a:hover::before {
+.navbuttons:hover::before {
     transform-origin: 0% 50%;
     transform: scaleX(1);
 }
-a:hover::after {
+.navbuttons:hover::after {
     transform: translate3d(0, 0, 0);
 }
   
-a span {
+.navbuttons span {
     display: inline-block;
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
 }
   
-  a:hover span {
+.navbuttons:hover span {
     transform: translate3d(-200%, 0, 0);
-  }
+}

@@ -8,10 +8,10 @@ function Navbar() {
                 <a href="#" class="logo">AngoeMango</a>
             </div>
             <div class="nav_right">
-                <a href="#" data-replace="about"><span>about</span></a>
-                <a href="#" data-replace="work"><span>work</span></a>
-                <a href="#" data-replace="resume"><span>resume</span></a>
-                <a href="#" data-replace="contact"><span>contact</span></a>
+                <a href="#" data-replace="about" class="navbuttons"><span>about</span></a>
+                <a href="#" data-replace="work" class="navbuttons"><span>work</span></a>
+                <a href="#" data-replace="resume" class="navbuttons"><span>resume</span></a>
+                <a href="#" data-replace="contact" class="navbuttons"><span>contact</span></a>
             </div>
         </nav>
     )
